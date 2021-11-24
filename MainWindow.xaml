@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <ListBox x:Name="ListBox" HorizontalAlignment="Left" Height="434" VerticalAlignment="Center" Width="648" SelectionChanged="ListBox_SelectionChanged"/>
+        <Button x:Name="AdicionarFuncionario" Content="Adicionar funcionário" HorizontalAlignment="Left" Height="50" Margin="648,0,0,0" VerticalAlignment="Top" Width="152" Click="AdicionarFuncionario_Click"/>
+        <Label Content="Nome:" HorizontalAlignment="Left" Height="26" Margin="648,66,0,0" VerticalAlignment="Top" Width="102"/>
+        <Label Content="Idade:" HorizontalAlignment="Left" Height="26" Margin="648,140,0,0" VerticalAlignment="Top" Width="102"/>
+        <Label Content="Salário" HorizontalAlignment="Left" Height="26" Margin="648,214,0,0" VerticalAlignment="Top" Width="102"/>
+        <TextBox x:Name="NomeDoFuncionario" HorizontalAlignment="Left" Height="43" Margin="648,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152"/>
+        <TextBox x:Name="IdadeDoFuncionario" HorizontalAlignment="Left" Height="43" Margin="648,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152"/>
+        <TextBox x:Name="SalarioDoFuncionario" HorizontalAlignment="Left" Height="43" Margin="648,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152"/>
 
     </Grid>
 </Window>

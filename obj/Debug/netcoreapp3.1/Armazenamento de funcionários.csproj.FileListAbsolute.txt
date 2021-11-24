@@ -1,0 +1,19 @@
+C:\Users\User\source\repos\Armazenamento de funcionários\Armazenamento de funcionários\obj\Debug\netcoreapp3.1\Armazenamento de funcionários.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Armazenamento de funcionários\Armazenamento de funcionários\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\User\source\repos\Armazenamento de funcionários\Armazenamento de funcionários\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\User\source\repos\Armazenamento de funcionários\Armazenamento de funcionários\obj\Debug\netcoreapp3.1\Armazenamento de funcionários_MarkupCompile.cache
+C:\Users\User\source\repos\Armazenamento de funcionários\Armazenamento de funcionários\obj\Debug\netcoreapp3.1\Armazenamento de funcionários_MarkupCompile.lref
+C:\Users\User\source\repos\Armazenamento de funcionários\Armazenamento de funcionários\bin\Debug\netcoreapp3.1\Armazenamento de funcionários.exe
+C:\Users\User\source\repos\Armazenamento de funcionários\Armazenamento de funcionários\bin\Debug\netcoreapp3.1\Armazenamento de funcionários.deps.json
+C:\Users\User\source\repos\Armazenamento de funcionários\Armazenamento de funcionários\bin\Debug\netcoreapp3.1\Armazenamento de funcionários.runtimeconfig.json
+C:\Users\User\source\repos\Armazenamento de funcionários\Armazenamento de funcionários\bin\Debug\netcoreapp3.1\Armazenamento de funcionários.runtimeconfig.dev.json
+C:\Users\User\source\repos\Armazenamento de funcionários\Armazenamento de funcionários\bin\Debug\netcoreapp3.1\Armazenamento de funcionários.dll
+C:\Users\User\source\repos\Armazenamento de funcionários\Armazenamento de funcionários\bin\Debug\netcoreapp3.1\Armazenamento de funcionários.pdb
+C:\Users\User\source\repos\Armazenamento de funcionários\Armazenamento de funcionários\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\User\source\repos\Armazenamento de funcionários\Armazenamento de funcionários\obj\Debug\netcoreapp3.1\Armazenamento de funcionários.g.resources
+C:\Users\User\source\repos\Armazenamento de funcionários\Armazenamento de funcionários\obj\Debug\netcoreapp3.1\Armazenamento de funcionários.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Armazenamento de funcionários\Armazenamento de funcionários\obj\Debug\netcoreapp3.1\Armazenamento de funcionários.AssemblyInfo.cs
+C:\Users\User\source\repos\Armazenamento de funcionários\Armazenamento de funcionários\obj\Debug\netcoreapp3.1\Armazenamento de funcionários.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Armazenamento de funcionários\Armazenamento de funcionários\obj\Debug\netcoreapp3.1\Armazenamento de funcionários.dll
+C:\Users\User\source\repos\Armazenamento de funcionários\Armazenamento de funcionários\obj\Debug\netcoreapp3.1\Armazenamento de funcionários.pdb
+C:\Users\User\source\repos\Armazenamento de funcionários\Armazenamento de funcionários\obj\Debug\netcoreapp3.1\Armazenamento de funcionários.genruntimeconfig.cache

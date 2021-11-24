@@ -24,5 +24,21 @@ namespace Armazenamento_de_funcionários
         {
             InitializeComponent();
         }
+
+        string[] file = System.IO.File.ReadAllLines(@"C:\Users\User\source\repos\Armazenamento de funcionários\Armazenamento de funcionários\Funcionarios.txt");
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void AdicionarFuncionario_Click(object sender, RoutedEventArgs e)
+        {
+            Funcionarios funcionario = new Funcionarios(NomeDoFuncionario.Text,int.Parse(IdadeDoFuncionario.Text), double.Parse(SalarioDoFuncionario.Text));
+            System.IO.File.AppendAllText(@"C:\Users\User\source\repos\Armazenamento de funcionários\Armazenamento de funcionários\Funcionarios.txt", funcionario.ToString() + Environment.NewLine);
+            NomeDoFuncionario.Text = "";
+            IdadeDoFuncionario.Text = "";
+            SalarioDoFuncionario.Text = "";
+        }
     }
 }
