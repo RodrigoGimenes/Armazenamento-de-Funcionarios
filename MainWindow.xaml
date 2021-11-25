@@ -15,6 +15,10 @@
         <TextBox x:Name="NomeDoFuncionario" HorizontalAlignment="Left" Height="43" Margin="648,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152"/>
         <TextBox x:Name="IdadeDoFuncionario" HorizontalAlignment="Left" Height="43" Margin="648,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152"/>
         <TextBox x:Name="SalarioDoFuncionario" HorizontalAlignment="Left" Height="43" Margin="648,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152"/>
+        <Canvas HorizontalAlignment="Left" Height="2" Margin="648,293,0,0" VerticalAlignment="Top" Width="152" Background="#FF0A0404"/>
+        <Button x:Name="RemoverFuncionario" Content="Remover funcionário" HorizontalAlignment="Left" Height="30" Margin="648,300,0,0" VerticalAlignment="Top" Width="152" Click="RemoverFuncionario_Click"/>
+        <TextBox x:Name="IdFuncionario" HorizontalAlignment="Left" Height="22" Margin="685,335,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="39"/>
+        <Label Content="ID:" HorizontalAlignment="Left" Height="28" Margin="653,332,0,0" VerticalAlignment="Top" Width="27"/>
 
     </Grid>
 </Window>

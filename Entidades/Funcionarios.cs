@@ -6,8 +6,8 @@ namespace Armazenamento_de_funcionários
 {
     class Funcionarios
     {
-        public string Nome { get; set; }
-        public int Idade { get; set; }
+        public string Nome { get; }
+        public int Idade { get; }
         public double Salario { get; set; }
 
         public Funcionarios(string nome, int idade, double salario)
