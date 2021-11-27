@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Armazenamento_de_funcionários"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="495" Width="838">
     <Grid>
-        <ListBox x:Name="ListBox" HorizontalAlignment="Left" Height="434" VerticalAlignment="Center" Width="648" SelectionChanged="ListBox_SelectionChanged"/>
+        <ListBox x:Name="lb_funcionarios" HorizontalAlignment="Left" Height="434" VerticalAlignment="Center" Width="648" SelectionChanged="ListBox_SelectionChanged"/>
         <Button x:Name="AdicionarFuncionario" Content="Adicionar funcionário" HorizontalAlignment="Left" Height="50" Margin="648,0,0,0" VerticalAlignment="Top" Width="152" Click="AdicionarFuncionario_Click"/>
         <Label Content="Nome:" HorizontalAlignment="Left" Height="26" Margin="648,66,0,0" VerticalAlignment="Top" Width="102"/>
         <Label Content="Idade:" HorizontalAlignment="Left" Height="26" Margin="648,140,0,0" VerticalAlignment="Top" Width="102"/>

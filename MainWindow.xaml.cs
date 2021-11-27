@@ -1,17 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Armazenamento_de_funcionários
 {
@@ -20,27 +10,22 @@ namespace Armazenamento_de_funcionários
     /// </summary>
     public partial class MainWindow : Window
     {
+        string path = System.IO.Path.GetFullPath(@"C:\Users\User\source\repos\Armazenamento de funcionários\Armazenamento de funcionários\Funcionarios.txt");
+        string[] lines = System.IO.File.ReadAllLines(@"C:\Users\User\source\repos\Armazenamento de funcionários\Armazenamento de funcionários\Funcionarios.txt");
         public MainWindow()
         {
             InitializeComponent();
+            AtualizarTabela();
         }
-
-        string path = System.IO.Path.GetFullPath(@"C:\Users\User\source\repos\Armazenamento de funcionários\Armazenamento de funcionários\Funcionarios.txt");
-        string[] lines = System.IO.File.ReadAllLines(@"C:\Users\User\source\repos\Armazenamento de funcionários\Armazenamento de funcionários\Funcionarios.txt");
-
-        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
         private void AdicionarFuncionario_Click(object sender, RoutedEventArgs e)
         {
-            Funcionarios funcionario = new Funcionarios(NomeDoFuncionario.Text,int.Parse(IdadeDoFuncionario.Text), double.Parse(SalarioDoFuncionario.Text));
+            Funcionarios funcionario = new Funcionarios(NomeDoFuncionario.Text, int.Parse(IdadeDoFuncionario.Text), double.Parse(SalarioDoFuncionario.Text));
             System.IO.File.AppendAllText(path, funcionario.ToString() + Environment.NewLine);
             NomeDoFuncionario.Text = "";
             IdadeDoFuncionario.Text = "";
             SalarioDoFuncionario.Text = "";
             lines = System.IO.File.ReadAllLines(path);
+            AtualizarTabela();
         }
 
         private void RemoverFuncionario_Click(object sender, RoutedEventArgs e)
@@ -54,6 +39,23 @@ namespace Armazenamento_de_funcionários
             }
             lines = System.IO.File.ReadAllLines(path);
             IdFuncionario.Text = "";
+            AtualizarTabela();
         }
+        public object AtualizarTabela()
+        {
+            lb_funcionarios.Items.Clear();
+            for (int i = 0; i < lines.Length; i++)
+            {
+                string[] func = lines[i].Split(' ');
+                lb_funcionarios.Items.Add("Nome: " + func[0] + Environment.NewLine + "Idade: " + func[1] + Environment.NewLine + "Salario: " + func[2] + Environment.NewLine + "ID: " + i);
+                lb_funcionarios.Items.Add("");
+            }
+            return null;
+        }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
+}

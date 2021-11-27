@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Armazenamento_de_funcionários
+﻿namespace Armazenamento_de_funcionários
 {
     class Funcionarios
     {
