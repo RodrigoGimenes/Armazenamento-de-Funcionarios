@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\Armazenamento de funcionários\\Armazenamento de funcionários\\Armazenamento de funcionários.csproj",
-      "projectName": "Armazenamento de funcionários",
-      "projectPath": "C:\\Users\\User\\source\\repos\\Armazenamento de funcionários\\Armazenamento de funcionários\\Armazenamento de funcionários.csproj",
+      "projectUniqueName": "C:\\Users\\User\\source\\repos\\Armazenamento de funcionários\\Armazenamento de funcionários\\Armazenamento de funcionarios.csproj",
+      "projectName": "Armazenamento de funcionarios",
+      "projectPath": "C:\\Users\\User\\source\\repos\\Armazenamento de funcionários\\Armazenamento de funcionários\\Armazenamento de funcionarios.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\User\\source\\repos\\Armazenamento de funcionários\\Armazenamento de funcionários\\obj\\",
       "projectStyle": "PackageReference",

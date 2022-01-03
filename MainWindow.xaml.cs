@@ -15,22 +15,22 @@ namespace Armazenamento_de_funcionários
         public MainWindow()
         {
             InitializeComponent();
-            AtualizarTabela();
+            ListBoxUpdate();
         }
-        private void AdicionarFuncionario_Click(object sender, RoutedEventArgs e)
+        private void AddEmployee_Click(object sender, RoutedEventArgs e)
         {
-            Funcionarios funcionario = new Funcionarios(NomeDoFuncionario.Text, int.Parse(IdadeDoFuncionario.Text), double.Parse(SalarioDoFuncionario.Text));
-            System.IO.File.AppendAllText(path, funcionario.ToString() + Environment.NewLine);
-            NomeDoFuncionario.Text = "";
-            IdadeDoFuncionario.Text = "";
-            SalarioDoFuncionario.Text = "";
+            Employee employee = new Employee(EmployeesName.Text, int.Parse(EmployeesAge.Text), double.Parse(EmployeesSalary.Text));
+            System.IO.File.AppendAllText(path, employee.ToString() + Environment.NewLine);
+            EmployeesName.Text = "";
+            EmployeesAge.Text = "";
+            EmployeesSalary.Text = "";
             lines = System.IO.File.ReadAllLines(path);
-            AtualizarTabela();
+            ListBoxUpdate();
         }
 
-        private void RemoverFuncionario_Click(object sender, RoutedEventArgs e)
+        private void RemoveEmployee_Click(object sender, RoutedEventArgs e)
         {
-            int indexToRemove = int.Parse(IdFuncionario.Text);
+            int indexToRemove = int.Parse(EmployeesId.Text);
             lines = lines.Where((source, index) => index != indexToRemove).ToArray();
             System.IO.File.WriteAllText(path, String.Empty);
             for (int i = 0; i < lines.Length; i++)
@@ -38,17 +38,17 @@ namespace Armazenamento_de_funcionários
                 System.IO.File.AppendAllText(path, lines[i] + Environment.NewLine);
             }
             lines = System.IO.File.ReadAllLines(path);
-            IdFuncionario.Text = "";
-            AtualizarTabela();
+            EmployeesId.Text = "";
+            ListBoxUpdate();
         }
-        public object AtualizarTabela()
+        public object ListBoxUpdate()
         {
-            lb_funcionarios.Items.Clear();
+            lb_employees.Items.Clear();
             for (int i = 0; i < lines.Length; i++)
             {
                 string[] func = lines[i].Split(' ');
-                lb_funcionarios.Items.Add("Nome: " + func[0] + Environment.NewLine + "Idade: " + func[1] + Environment.NewLine + "Salario: " + func[2] + Environment.NewLine + "ID: " + i);
-                lb_funcionarios.Items.Add("");
+                lb_employees.Items.Add("Nome: " + func[0] + Environment.NewLine + "Idade: " + func[1] + Environment.NewLine + "Salario: " + func[2] + Environment.NewLine + "ID: " + i);
+                lb_employees.Items.Add("");
             }
             return null;
         }
